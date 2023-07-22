@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    box-sizing: 0px;
+    padding: 0px;
+    background-color: #D9D9D9;
+}
+#top-container {
+    font-family: Verdana;
+    text-align: center;
+}
+
+#meio-container {
+    position: relative;
+    text-align: center;
+}
+
+.foto-txt {
+    position: relative;
+    object-position: 50% 50%;
+}
+
+.foto-txt p {
+    position: absolute;
+    font-family: Georgia;
+    top: 7%;
+    right: 47%;
+}
+.icon {
+    position: absolute;
+    width: 7%;
+    height: 45%;
+    top: 10%;
+    right: 40%;
+
+}
+.foto-ret {
+    margin: 1rem;
+}
+
