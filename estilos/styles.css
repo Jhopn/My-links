@@ -2,38 +2,71 @@ body {
     margin: 0px;
     box-sizing: 0px;
     padding: 0px;
-    background-color: #D9D9D9;
+    background-image: url(/img/fundoimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-#top-container {
-    font-family: Verdana;
+.container{
+    justify-content: center;
     text-align: center;
 }
-
-#meio-container {
-    position: relative;
-    text-align: center;
-}
-
-.foto-txt {
-    position: relative;
-    object-position: 50% 50%;
-}
-
-.foto-txt p {
-    position: absolute;
-    font-family: Georgia;
-    top: 7%;
-    right: 47%;
+.container p{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconft {
+    z-index: 2;
+    top: 1rem;
+}
+.myicon {
     position: absolute;
-    width: 7%;
-    height: 45%;
-    top: 10%;
-    right: 40%;
-
+    top: 0.2rem;
+    z-index: 1;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+.quite-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .foto-ret {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
+.foto-txt{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.quite-container p{
+    position: absolute;
+}
+.quite-container a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-color: black;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
