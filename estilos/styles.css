@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 .container p{
+    text-shadow: 0px 2px 2px black;
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -48,6 +49,7 @@ body {
     justify-content: center;
     border-radius: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .icon-st {
     position: absolute;
@@ -55,13 +57,14 @@ body {
 }
 .quite-container p{
     position: absolute;
+    text-shadow: 0px 2px 1px #eceef6;
 }
 .quite-container a{
     text-decoration: none;
     color: black;
 }
 footer{
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0px;
     background-color: #D9D9D9;
@@ -73,8 +76,22 @@ footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-image: url(/img/desing.svg);
+    background-image: url(/img/Mediamodifier-Design.svg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+.foto-txt p {
+    z-index: 2;
+}
+.foto-txt :hover {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 5px #363a4d;
+    transform: scale(1.25,1.25);
+    z-index: 2;
+}
+@media (max-width: 1024px) {
+    footer{
+        bottom: -16rem;
+    }
 }
